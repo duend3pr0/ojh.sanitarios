@@ -8,16 +8,17 @@ export default function NavBar() {
     return (
         <ul className="nav-list">
             <li className="nav-item">
-                <Link to="/">Brand</Link>
+           
+                <Link to="/"><img src="Assets/logo.png" alt="Logo de la empresa"  /> </Link>
             </li>
             <li className="nav-item">
-                <Link to="/category/inodoro">inodoro</Link>
+                <Link to="/category/inodoro">Inodoros</Link>
             </li>
             <li className="nav-item">
-                <Link to="/category/bidet">bidet</Link>
+                <Link to="/category/bidet">Bidets</Link>
             </li>
             <li className="nav-item">
-                <Link to="/category/deposito">deposito</Link>
+                <Link to="/category/deposito">Depósitos</Link>
             </li>
             
             <div className="widget-container">

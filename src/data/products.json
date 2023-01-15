@@ -5,7 +5,7 @@
         "description": "Inodoro de apoyo Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "inodmarina.jpg",
+        "image": "/Assets/img/inodmarina.jpg",
         "category": "inodoro",
         "cantidad": 1,
         "rating": {
@@ -19,7 +19,7 @@
         "description": "Inodoro de apoyo Bari blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "inodbari.jpg",
+        "image": "/Assets/img/inodbari.jpg",
          "category": "inodoro",
          "cantidad": 1,
         "rating": {
@@ -34,7 +34,7 @@
         "description": "Inodoro de apoyo Andina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "inodandina.jpg",
+        "image": "/Assets/img/inodandina.jpg",
         "category": "inodoro",
         "cantidad": 1,
         "rating": {
@@ -49,7 +49,7 @@
         "description": "Inodoro de apoyo Trento blanco Ferrum",
         "price": 9000,
         "stock": 30,
-        "image": "inodtrento.jpg",
+        "image": "/Assets/img/inodtrento.jpg",
         "category": "inodoro",
         "cantidad": 1
     },
@@ -60,7 +60,7 @@
         "description": "Inodoro de apoyo Varese blanco Ferrum",
         "price": 14000,
         "stock": 10,
-        "image": "inodvarese.jpg",
+        "image": "/Assets/img/inodvarese.jpg",
         "category": "inodoro",
         "cantidad": 1
         
@@ -72,7 +72,7 @@
         "description": "Inodoro de apoyo Veneto blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "inodveneto.jpg",
+        "image": "/Assets/img/inodveneto.jpg",
         "category": "inodoro",
         "cantidad": 1
     },          
@@ -82,7 +82,7 @@
         "description": "Bidet 3 agujeros Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "bidmarina.jpg",
+        "image": "/Assets/img/bidmarina.jpg",
         "category": "bidet",
         "cantidad": 1
     },
@@ -93,7 +93,7 @@
         "description": "Bidet 3 agujeros Bari blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "bidbari.jpg",
+        "image": "/Assets/img/bidbari.jpg",
          "category": "bidet",
          "cantidad": 1          
          },
@@ -105,7 +105,7 @@
         "description": "Bidet 3 agujeros Andina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "bidandina.jpg",
+        "image": "/Assets/img/bidandina.jpg",
         "category": "bidet",
         "cantidad": 1
      },
@@ -116,7 +116,7 @@
         "description": "Bidet 3 agujeros Trento blanco Ferrum",
         "price": 9000,
         "stock": 30,
-        "image": "bidtrento.jpg",
+        "image": "/Assets/img/bidtrento.jpg",
         "category": "bidet",
         "cantidad": 1
         
@@ -128,7 +128,7 @@
         "description": "Bidet 3 agujeros Varese blanco Ferrum",
         "price": 14000,
         "stock": 10,
-        "image": "bidvarese.jpg",
+        "image": "/Assets/img/bidvarese.jpg",
         "category": "bidet",
         "cantidad": 1
         
@@ -140,7 +140,7 @@
         "description": "Bidet 3 agujeros Veneto blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "bidveneto.jpg",
+        "image": "/Assets/img/bidveneto.jpg",
         "category": "bidet",
         "cantidad": 1
     },
@@ -150,7 +150,7 @@
         "description": "Depósito de apoyo Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "depomarina.jpg",
+        "image": "/Assets/img/depomarina.jpg",
         "category": "deposito",
         "cantidad": 1
     },
@@ -161,7 +161,7 @@
         "description": "Depósito de apoyo Bari blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "depobari.jpg",
+        "image": "/Assets/img/depobari.jpg",
          "category": "deposito",
          "cantidad": 1
          },
@@ -173,7 +173,7 @@
         "description": "Depósito de apoyo Andina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "depoandina.jpg",
+        "image": "/Assets/img/depoandina.jpg",
         "category": "deposito",
         "cantidad": 1
      },
@@ -184,7 +184,7 @@
         "description": "Depósito de apoyo Trento blanco Ferrum",
         "price": 9000,
         "stock": 30,
-        "image": "depotrento.jpg",
+        "image": "/Assets/img/depotrento.jpg",
         "category": "deposito",
         "cantidad": 1
         
@@ -196,7 +196,7 @@
         "description": "Depósito de apoyo Varese blanco Ferrum",
         "price": 14000,
         "stock": 10,
-        "image": "depovarese.jpg",
+        "image": "/Assets/img/depovarese.jpg",
         "category": "deposito",
         "cantidad": 1
         
@@ -208,7 +208,7 @@
         "description": "Depósito de apoyo Veneto blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "depoveneto.jpg",
+        "image": "/Assets/img/depoveneto.jpg",
         "category": "deposito",
         "cantidad": 1
     }
