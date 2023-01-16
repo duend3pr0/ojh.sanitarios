@@ -38,27 +38,6 @@ const ItemListContainer = ({greeting}) => {
 
     getProducts()
 
-    //Caso llamado a una API externa
-
-    /* fetch('https://fakestoreapi.com/products')
-      .then(response => {
-        console.log(response);
-        return response.json()
-      })
-      .then(products => {
-        //En base a la categoryId vamos a hacer el filtro de productos
-        if (categoryId) {
-          const productosFiltradosPorCategoria = products.filter(producto => producto.category === categoryId)
-          console.log(productosFiltradosPorCategoria)
-          setProducts(productosFiltradosPorCategoria)
-        } else {
-          setProducts(products)
-        }
-      })
-      .catch((err) => {
-        alert("Hubo un error")
-      }); */
-
   }, [categoryId])
 
   const handleChange = (event) => {
