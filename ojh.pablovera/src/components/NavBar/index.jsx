@@ -1,46 +1,48 @@
 import React from 'react'
-import CarWidget from '../CarWidget';
+import { Link } from 'react-router-dom';
+import CarWidget from '../CartWidget';
 import "./styles.css";
+
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg bg-light m-3">
       <div className="container-fluid">
-        <a className="navbar-brand BrandName" href="/#">OJH SANITARIOS</a>
+        <Link className="navbar-brand BrandName" to="/#">OJH SANITARIOS</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse d-flex align-items-center" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle ul-link" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle ul-link" to="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Líneas de baño
-              </a>
+              </Link>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item ul-link fs-16" href="/#">Andina</a></li>
-                <li><a className="dropdown-item ul-link fs-16" href="/#">Marina</a></li>
-                <li><a className="dropdown-item ul-link fs-16" href="/#">Temple</a></li>
-                <li><a className="dropdown-item ul-link fs-16" href="/#">Varese</a></li>
-                <li><a className="dropdown-item ul-link fs-16" href="/#">Veneto</a></li>
+                <li><Link className="dropdown-item ul-link fs-16" to="/category/andina">Andina</Link></li>
+                <li><Link className="dropdown-item ul-link fs-16" to="/category/marina">Marina</Link></li>
+                <li><Link className="dropdown-item ul-link fs-16" to="/category/temple">Temple</Link></li>
+                <li><Link className="dropdown-item ul-link fs-16" to="/category/varese">Varese</Link></li>
+                <li><Link className="dropdown-item ul-link fs-16" to="/category/veneto">Veneto</Link></li>
 
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle ul-link" href="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle ul-link" to="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Productos
-              </a>
+              </Link>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item ul-link" href="/#">Sanitarios</a></li>
-                <li><a className="dropdown-item ul-link" href="/#">Bachas</a></li>
-                <li><a className="dropdown-item ul-link" href="/#">Bañeras</a></li>
-                <li><a className="dropdown-item ul-link" href="/#">Vanitorys</a></li>
+                <li><Link className="dropdown-item ul-link" to="/category/inodoros">Inodoros</Link></li>
+                <li><Link className="dropdown-item ul-link" to="/category/bidets">Bidets</Link></li>
+                <li><Link className="dropdown-item ul-link" to="/category/depositos">Depositos</Link></li>
+                
 
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link active ul-link" aria-current="page" href="/#">Contacto</a>
+              <Link className="nav-link active ul-link" aria-current="page" to="/category/">Contacto</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active ul-link" aria-current="page" href="/#">Sobre Nosotros</a>
+              <Link className="nav-link active ul-link" aria-current="page" to="/category/">Sobre Nosotros</Link>
             </li>
 
           </ul>
