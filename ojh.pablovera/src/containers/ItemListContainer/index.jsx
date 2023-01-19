@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
 import productJson from '../../data/products';
+import { db } from '../../firebase/config';
+
+console.log(db);
 
 const ItemListContainer = () => {
     
@@ -16,32 +19,31 @@ const ItemListContainer = () => {
   useEffect(()=> {
 
     //Caso JSON propio
-    const getProducts = () => {
+    const getProducts = async ()=>{
 
-      const obtenerProductos = new Promise((res, rej) => {
-        setTimeout(()=> {
-          res(productJson)
-          console.log(productJson)
-          console.log("json obtenido")
-        }, 3000)
-      })
-
-      obtenerProductos
-      .then( productos => {
-        if (categoryId) { 
-          const productosFiltradosPorCategoria = productos.filter(producto => producto.category.toString() === categoryId || producto.title.toString() === categoryId ) 
-          
-          console.log(productosFiltradosPorCategoria) 
-          setProducts(productosFiltradosPorCategoria ) 
-
-        } 
-         else { 
-          setProducts(productos) 
+      let querySnapshot;
+      if (categoryId) {
+        const q = query(collection(db, "products"), where("category", "==", categoryId));
+        querySnapshot = await getDocs(q);
+      } else {
+        querySnapshot = await getDocs(collection(db, "products"));
+      }
+     
+     const productosFirebase = []
+     querySnapshot.forEach((doc) => {
+       console.log(`${doc.id} => ${doc.data()}`);
+        const product = {
+          id: doc.id,
+          ...doc.data()
         }
-      })
-      .catch(error => console.log(error))
-    }
+        productosFirebase.push(product)
 
+        
+        
+      });
+      setProducts(productosFirebase)
+    }
+    
     getProducts()
 
   }, [categoryId])

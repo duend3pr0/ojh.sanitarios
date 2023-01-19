@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../../components/ItemDetail';
 import productJson from '../../data/products.json';
+import { doc, getDoc } from "firebase/firestore";
+
 
 const ItemDetailContainer = () => {
 
@@ -13,13 +15,23 @@ const ItemDetailContainer = () => {
   useEffect(()=> {
 
     //CASO JSON propio
-    const getProductDetail = () => {
+    const getProduct = async () => {
+      const docRef = doc(db, "products", id);
+    const docSnap = await getDoc(docRef);
 
-      const obtenerProducto = new Promise((res, rej) => {
-        setTimeout(()=> {
-          res(productJson)
-        }, 3000)
-      })
+if (docSnap.exists()) {
+  console.log("Document data:", docSnap.data());
+  const productDetail = {
+    id: docSnap.id,
+    ...docSnap.data()
+  }
+  setDetail(productDetail)
+
+} else {
+  // doc.data() will be undefined in this case
+  console.log("No such document!");
+}
+
 
       obtenerProducto
       .then( productos => {

@@ -5,13 +5,9 @@
         "description": "Inodoro de apoyo Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "/Assets/img/inodmarina.jpg",
+        "image": "  ",
         "category": "inodoro",
-        "cantidad": 1,
-        "rating": {
-            "rate": 3.9,
-            "count": 120
-        }
+        "quantity": 1
     },
     {
         "id": 2,
@@ -21,8 +17,8 @@
         "stock": 30,
         "image": "/Assets/img/inodbari.jpg",
          "category": "inodoro",
-         "cantidad": 1,
-        "rating": {
+         "quantity": 1,
+        "   ": {
             "rate": 4.1,
             "count": 259
         }
@@ -36,7 +32,7 @@
         "stock": 30,
         "image": "/Assets/img/inodandina.jpg",
         "category": "inodoro",
-        "cantidad": 1,
+        "quantity": 1,
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -51,7 +47,7 @@
         "stock": 30,
         "image": "/Assets/img/inodtrento.jpg",
         "category": "inodoro",
-        "cantidad": 1
+        "quantity": 1
     },
     {
         "id": 5,
@@ -62,7 +58,7 @@
         "stock": 10,
         "image": "/Assets/img/inodvarese.jpg",
         "category": "inodoro",
-        "cantidad": 1
+        "quantity": 1
         
     },
     {
@@ -74,7 +70,7 @@
         "stock": 30,
         "image": "/Assets/img/inodveneto.jpg",
         "category": "inodoro",
-        "cantidad": 1
+        "   ": 1
     },          
         {
         "id": 7,
@@ -84,7 +80,7 @@
         "stock": 30,
         "image": "/Assets/img/bidmarina.jpg",
         "category": "bidet",
-        "cantidad": 1
+        "quantity": 1
     },
     {
         "id": 8,
@@ -95,7 +91,7 @@
         "stock": 30,
         "image": "/Assets/img/bidbari.jpg",
          "category": "bidet",
-         "cantidad": 1          
+         "quantity": 1          
          },
 
     {
@@ -107,7 +103,7 @@
         "stock": 30,
         "image": "/Assets/img/bidandina.jpg",
         "category": "bidet",
-        "cantidad": 1
+        "quantity": 1
      },
     {
         "id": 10,
@@ -118,7 +114,7 @@
         "stock": 30,
         "image": "/Assets/img/bidtrento.jpg",
         "category": "bidet",
-        "cantidad": 1
+        "quantity": 1
         
     },
     {
@@ -130,7 +126,7 @@
         "stock": 10,
         "image": "/Assets/img/bidvarese.jpg",
         "category": "bidet",
-        "cantidad": 1
+        "quantity": 1
         
     },
     {
@@ -142,7 +138,7 @@
         "stock": 30,
         "image": "/Assets/img/bidveneto.jpg",
         "category": "bidet",
-        "cantidad": 1
+        "quantity": 1
     },
     {
         "id": 13,
@@ -152,7 +148,7 @@
         "stock": 30,
         "image": "/Assets/img/depomarina.jpg",
         "category": "deposito",
-        "cantidad": 1
+        "quantity": 1
     },
     {
         "id": 14,
@@ -163,7 +159,7 @@
         "stock": 30,
         "image": "/Assets/img/depobari.jpg",
          "category": "deposito",
-         "cantidad": 1
+         "quantity": 1
          },
 
     {
@@ -175,7 +171,7 @@
         "stock": 30,
         "image": "/Assets/img/depoandina.jpg",
         "category": "deposito",
-        "cantidad": 1
+        "quantity": 1
      },
     {
         "id": 16,
@@ -186,7 +182,7 @@
         "stock": 30,
         "image": "/Assets/img/depotrento.jpg",
         "category": "deposito",
-        "cantidad": 1
+        "quantity": 1
         
     },
     {
@@ -198,7 +194,7 @@
         "stock": 10,
         "image": "/Assets/img/depovarese.jpg",
         "category": "deposito",
-        "cantidad": 1
+        "quantity": 1
         
     },
     {
@@ -210,7 +206,7 @@
         "stock": 30,
         "image": "/Assets/img/depoveneto.jpg",
         "category": "deposito",
-        "cantidad": 1
+        "quantity": 1
     }
 ]
 
