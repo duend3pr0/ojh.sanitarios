@@ -16,9 +16,8 @@ const ItemDetailContainer = () => {
   //Este effect se ejecuta cuando se monta el componente
   useEffect(()=> {
     const getProduct = async()=>{
-
       const docRef = doc(db, "products", id);
-  const docSnap = await getDoc(docRef);
+      const docSnap = await getDoc(docRef);
   
   if (docSnap.exists()) {
     console.log("Document data:", docSnap.data());

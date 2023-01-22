@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
-import productJson from '../../data/products';
 import { db } from '../../firebase/config';
 import { collection, query, where, getDocs } from "firebase/firestore";
 
@@ -48,18 +47,13 @@ const ItemListContainer = () => {
 
   }, [categoryId])
 
-  const handleChange = (event) => {
-    const value = event.target.value
-    const productsFiltradosPorInput = productJson.filter(product => product.title.toLowerCase().includes(value.toLowerCase()))
-    setProducts(productsFiltradosPorInput)
-  }
+  
 
   console.log(products)
 
   return (
     <div>
-        <input onChange={handleChange} placeholder='Realice la búsqueda de productos'></input>
-        <ItemList productos={products}/>
+       <ItemList productos={products}/>
     </div>
   )
 }

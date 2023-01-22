@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import CarWidget from '../CartWidget';
 import "./styles.css";
+import { Link } from 'react-router-dom';
+import CartWidget from '../CartWidget';
 
 export default function NavBar() {
   return (
@@ -47,11 +47,10 @@ export default function NavBar() {
 
           </ul>
           <div className="d-flex mr-2" >
-            <CarWidget />
-            <h3>0</h3>
-          </div>
+            <CartWidget/>
+                     </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }

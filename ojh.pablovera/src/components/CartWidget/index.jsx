@@ -1,22 +1,22 @@
-import React from 'react'
-import { useContext } from 'react'
+import React, { useContext }  from 'react'
 import {BsCart4} from 'react-icons/bs'
-import {Shop} from 
+import { Shop } from '../../context/ShopProvider'
 
 
-const CarWidget = () => {
+const CartWidget = () => {
 
-  const {countCart} = useContext(Shop)
+  const {countCart} = useContext(Shop);
+  
   console.log(countCart)
-  console.log("countCart");
+  console.log("countCartttt");
 
   return (
     <>
     <BsCart4 size={45}/>
-    <span>{countCart}</span>
+    <span>{countCart()}</span>
     </>
     
   )
 }
 
-export default CarWidget
+export default CartWidget
