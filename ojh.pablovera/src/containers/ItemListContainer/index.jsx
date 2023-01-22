@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
 import productJson from '../../data/products';
 import { db } from '../../firebase/config';
+import { collection, query, where, getDocs } from "firebase/firestore";
 
 console.log(db);
 
@@ -12,39 +13,38 @@ const ItemListContainer = () => {
     const [products, setProducts] = useState([])
 
     const {categoryId}  = useParams()
-  console.log(categoryId)
+    console.log(categoryId)
+    console.log("categoryID")
   
 
   //Este effect se ejecuta cuando se monta el componente
   useEffect(()=> {
-
-    //Caso JSON propio
-    const getProducts = async ()=>{
-
+    
+    const getProducts =async ()=>{
       let querySnapshot;
-      if (categoryId) {
-        const q = query(collection(db, "products"), where("category", "==", categoryId));
+      if (categoryId){
+        const q = query(collection(db, "products"), where("category", "===", categoryId));
         querySnapshot = await getDocs(q);
-      } else {
+      }else {
         querySnapshot = await getDocs(collection(db, "products"));
       }
-     
-     const productosFirebase = []
-     querySnapshot.forEach((doc) => {
-       console.log(`${doc.id} => ${doc.data()}`);
-        const product = {
-          id: doc.id,
-          ...doc.data()
-        }
-        productosFirebase.push(product)
 
-        
-        
-      });
-      setProducts(productosFirebase)
+      const productosFirebase = [];
+      querySnapshot.forEach((doc) => {
+      const product = {
+      id: doc.id,
+      ...doc.data()
     }
-    
+    productosFirebase.push(product);
+  });
+
+    setProducts(productosFirebase)
+      
+    }
     getProducts()
+    console.log(getProducts);
+
+
 
   }, [categoryId])
 
