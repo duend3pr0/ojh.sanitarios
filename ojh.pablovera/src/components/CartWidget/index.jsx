@@ -1,6 +1,6 @@
 import React, { useContext }  from 'react'
 import {BsCart4} from 'react-icons/bs'
-import { Shop } from '../../context/ShopProvider'
+import {Shop} from '../../context/ShopProvider'
 
 
 const CartWidget = () => {
