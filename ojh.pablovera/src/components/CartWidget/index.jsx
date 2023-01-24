@@ -13,7 +13,7 @@ const CartWidget = () => {
   return (
     <>
     <BsCart4 size={45}/>
-    <span>{countCart()}</span>
+    {/* <span>{countCart()}</span> */}
     </>
     
   )

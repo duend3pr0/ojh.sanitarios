@@ -32,6 +32,21 @@ const ShopProvider = ({children}) => {
     const isProductInCart = (id) => {
         return products.some(product => product.id === id)
     }
+
+    const total = ()=>{
+        let total = 0;
+        for (const product of products) {
+            total += product.price * product.quantity            
+        }
+        return total;
+
+    }
+
+    //* Insertar formulario, con set visibility, poner la variable en un estado iniciando en false
+
+
+
+
     
     return (
         <Shop.Provider value = {{products, addProduct, countCart}}>

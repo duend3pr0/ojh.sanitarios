@@ -3,10 +3,12 @@ import NavBar from './components/NavBar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ShopProvider from './context/ShopProvider';
 
 
 function App() {
   return (
+    <ShopProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -16,6 +18,7 @@ function App() {
         <Route path='*' element={<h2>Ruta no encontrada</h2>}/>
       </Routes>
     </BrowserRouter>
+    </ShopProvider>
   );
 }
 
