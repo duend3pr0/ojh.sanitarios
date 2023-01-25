@@ -8,7 +8,7 @@ const TableRow = ({product}) => {
           <td>{product.title}</td>
           <td>{product.price}</td>
           <td>{product.quantity}</td>
-          <td><button>Remove</button></td>
+          <td><button>Borrar</button></td>
     </tr>
   )
 }

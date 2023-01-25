@@ -1,20 +1,20 @@
 import React, { useContext }  from 'react'
 import {BsCart4} from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 import {Shop} from '../../context/ShopProvider'
+
 
 
 const CartWidget = () => {
 
   const {countCart} = useContext(Shop);
+   
   
-  console.log(countCart)
-  console.log("countCartttt");
-
   return (
-    <>
+    <Link to="/cart">
     <BsCart4 size={45}/>
-    {/* <span>{countCart()}</span> */}
-    </>
+    <span>{countCart()}</span>
+    </Link>
     
   )
 }
