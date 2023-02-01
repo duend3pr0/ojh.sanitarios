@@ -16,10 +16,10 @@ const useFirebase = (categoryId) => {
             const getProducts = async () => {
                 let querySnapshot;
                 if (categoryId) {
-                    const q = query(collection(db, "products"), where("category" , "==", categoryId));
+                    const q = query(collection(db, "products"), where("category" , "==", categoryId)||("title" , "==", categoryId) );
                     const p = query(collection(db, "products"), where("title" , "==", categoryId));
-                    querySnapshot = await getDocs(q,p)
-                    console.log("caca");
+                    querySnapshot = await getDocs(q)
+                    
                     } else {
                     querySnapshot = await getDocs(collection(db, "products"));
                 }
