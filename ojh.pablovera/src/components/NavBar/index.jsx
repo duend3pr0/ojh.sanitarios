@@ -20,7 +20,7 @@ export default function NavBar() {
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item ul-link fs-16" to="/category/andina">Andina</Link></li>
                 <li><Link className="dropdown-item ul-link fs-16" to="/category/marina">Marina</Link></li>
-                <li><Link className="dropdown-item ul-link fs-16" to="/category/temple">Temple</Link></li>
+                <li><Link className="dropdown-item ul-link fs-16" to="/category/trento">Trento</Link></li>
                 <li><Link className="dropdown-item ul-link fs-16" to="/category/varese">Varese</Link></li>
                 <li><Link className="dropdown-item ul-link fs-16" to="/category/veneto">Veneto</Link></li>
 

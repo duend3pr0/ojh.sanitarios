@@ -16,10 +16,11 @@ const useFirebase = (categoryId) => {
             const getProducts = async () => {
                 let querySnapshot;
                 if (categoryId) {
-                    console.log(categoryId)
-                    const q = query(collection(db, "products"), where("category"||"title" , "==", categoryId));
-                    querySnapshot = await getDocs(q);
-                } else {
+                    const q = query(collection(db, "products"), where("category" , "==", categoryId));
+                    const p = query(collection(db, "products"), where("title" , "==", categoryId));
+                    querySnapshot = await getDocs(q,p)
+                    console.log("caca");
+                    } else {
                     querySnapshot = await getDocs(collection(db, "products"));
                 }
                 const productosFirebase = [];

@@ -13,6 +13,9 @@ const ItemListContainer = () => {
   const {categoryId}  = useParams()
   console.log(categoryId);
   console.log("mostrando category")
+  console.log("useFirebase");
+  console.log(useFirebase(categoryId));
+
   
   const [products, loading, error] =useFirebase(categoryId)
     // useEffect(()=>{

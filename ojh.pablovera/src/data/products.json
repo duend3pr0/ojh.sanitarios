@@ -6,7 +6,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/inodmarina.jpg",
-        "category": "inodoro",
+        "category": "inodoros",
         "quantity": 1
     },
     {
@@ -16,7 +16,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/inodbari.jpg",
-         "category": "inodoro",
+         "category": "inodoros",
          "quantity": 1,
         "   ": {
             "rate": 4.1,
@@ -31,7 +31,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/inodandina.jpg",
-        "category": "inodoro",
+        "category": "inodoros",
         "quantity": 1,
         "rating": {
             "rate": 4.7,
@@ -57,7 +57,7 @@
         "price": 14000,
         "stock": 10,
         "image": "/Assets/img/inodvarese.jpg",
-        "category": "inodoro",
+        "category": "inodoros",
         "quantity": 1
         
     },
@@ -69,7 +69,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/inodveneto.jpg",
-        "category": "inodoro",
+        "category": "inodoros",
         "   ": 1
     },          
         {
@@ -79,7 +79,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/bidmarina.jpg",
-        "category": "bidet",
+        "category": "bidets",
         "quantity": 1
     },
     {
@@ -90,7 +90,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/bidbari.jpg",
-         "category": "bidet",
+         "category": "bidets",
          "quantity": 1          
          },
 
@@ -102,7 +102,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/bidandina.jpg",
-        "category": "bidet",
+        "category": "bidets",
         "quantity": 1
      },
     {
@@ -113,7 +113,7 @@
         "price": 9000,
         "stock": 30,
         "image": "/Assets/img/bidtrento.jpg",
-        "category": "bidet",
+        "category": "bidets",
         "quantity": 1
         
     },
@@ -125,7 +125,7 @@
         "price": 14000,
         "stock": 10,
         "image": "/Assets/img/bidvarese.jpg",
-        "category": "bidet",
+        "category": "bidets",
         "quantity": 1
         
     },
@@ -137,7 +137,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/bidveneto.jpg",
-        "category": "bidet",
+        "category": "bidets",
         "quantity": 1
     },
     {
@@ -147,7 +147,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/depomarina.jpg",
-        "category": "deposito",
+        "category": "depositos",
         "quantity": 1
     },
     {
@@ -158,7 +158,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/depobari.jpg",
-         "category": "deposito",
+         "category": "depositos",
          "quantity": 1
          },
 
@@ -170,7 +170,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/depoandina.jpg",
-        "category": "deposito",
+        "category": "depositos",
         "quantity": 1
      },
     {
@@ -181,7 +181,7 @@
         "price": 9000,
         "stock": 30,
         "image": "/Assets/img/depotrento.jpg",
-        "category": "deposito",
+        "category": "depositos",
         "quantity": 1
         
     },
@@ -193,7 +193,7 @@
         "price": 14000,
         "stock": 10,
         "image": "/Assets/img/depovarese.jpg",
-        "category": "deposito",
+        "category": "depositos",
         "quantity": 1
         
     },
@@ -205,7 +205,7 @@
         "price": 8000,
         "stock": 30,
         "image": "/Assets/img/depoveneto.jpg",
-        "category": "deposito",
+        "category": "depositos",
         "quantity": 1
     }
 ]
