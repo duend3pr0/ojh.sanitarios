@@ -1,6 +1,6 @@
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase/config";
-import products from '..//data/products.json'; //Colocamos la ruta donde está ubicado el json.
+import products from '../data/products.json'; //Colocamos la ruta donde está ubicado el json.
 
 //NOTA: también se puede hacer algo similar con un bucle dentro de Object.entries (pero ya es nivel un pcoo más avanzado)
 

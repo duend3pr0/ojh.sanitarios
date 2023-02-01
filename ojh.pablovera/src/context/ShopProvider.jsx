@@ -45,10 +45,18 @@ const ShopProvider = ({children}) => {
     const cleanCart = ()=>{
         setProducts([])
     }
+
+    const removeProduct = (id) => {
+        const productsFiltered = products.filter(product => product.id !== id);
+        setProducts(productsFiltered)
+    }
+
+
+
     //* Insertar formulario, con set visibility, poner la variable en un estado iniciando en false
         
     return (
-        <Shop.Provider value = {{products, addProduct, countCart,total, cleanCart}}>
+        <Shop.Provider value = {{products, addProduct, countCart,total, cleanCart,removeProduct}}>
             {children}
         </Shop.Provider>
     )

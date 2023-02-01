@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import "./styles.css";
 
+/**
+ * 
+ * @param {onAdd} onAdd Function que agrega al carrito de compra
+ * @param {stock} stock El stock del producto
+ * @param {initial} initial El estado inicial del contador
+ * @returns Contador
+ */
+
+
 const ItemCount = ({ onAdd, stock, initial }) => {
     const [count, setCount] = useState(initial);
 

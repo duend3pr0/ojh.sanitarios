@@ -23,8 +23,7 @@ const Cart = () => {
   const confirmPurchase = async (dataDelFormulario) => {
     const {phone: telefono, nombre, email} = dataDelFormulario
     try {
-      setLoader(true);
-  
+      
       const order = generateOrderObject({
         nombre,
         email,

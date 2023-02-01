@@ -1,17 +1,17 @@
 [
     {
         "id": 1,
-        "title": "Marina",                
+        "title": "marina",                
         "description": "Inodoro de apoyo Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
-        "image": "  ",
+        "image": "/Assets/img/inodmarina.jpg",
         "category": "inodoro",
         "quantity": 1
     },
     {
         "id": 2,
-        "title": "Bari",                
+        "title": "bari",                
         "description": "Inodoro de apoyo Bari blanco Ferrum",
         "price": 8000,
         "stock": 30,
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "title": "Andina",
+        "title": "andina",
         
         "description": "Inodoro de apoyo Andina blanco Ferrum",
         "price": 8000,
@@ -40,7 +40,7 @@
     },
     {
         "id": 4,
-        "title": "Trento",
+        "title": "trento",
         
         "description": "Inodoro de apoyo Trento blanco Ferrum",
         "price": 9000,
@@ -51,7 +51,7 @@
     },
     {
         "id": 5,
-        "title": "Varese",
+        "title": "varese",
         
         "description": "Inodoro de apoyo Varese blanco Ferrum",
         "price": 14000,
@@ -63,7 +63,7 @@
     },
     {
         "id": 6,
-        "title": "Veneto",
+        "title": "veneto",
         
         "description": "Inodoro de apoyo Veneto blanco Ferrum",
         "price": 8000,
@@ -74,7 +74,7 @@
     },          
         {
         "id": 7,
-        "title": "Marina",                
+        "title": "marina",                
         "description": "Bidet 3 agujeros Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
@@ -84,7 +84,7 @@
     },
     {
         "id": 8,
-        "title": "Bari",
+        "title": "bari",
         
         "description": "Bidet 3 agujeros Bari blanco Ferrum",
         "price": 8000,
@@ -96,7 +96,7 @@
 
     {
         "id": 9,
-        "title": "Andina",
+        "title": "andina",
         
         "description": "Bidet 3 agujeros Andina blanco Ferrum",
         "price": 8000,
@@ -107,7 +107,7 @@
      },
     {
         "id": 10,
-        "title": "Trento",
+        "title": "trento",
         
         "description": "Bidet 3 agujeros Trento blanco Ferrum",
         "price": 9000,
@@ -119,7 +119,7 @@
     },
     {
         "id": 11,
-        "title": "Varese",
+        "title": "varese",
         
         "description": "Bidet 3 agujeros Varese blanco Ferrum",
         "price": 14000,
@@ -131,7 +131,7 @@
     },
     {
         "id": 12,
-        "title": "Veneto",
+        "title": "veneto",
         
         "description": "Bidet 3 agujeros Veneto blanco Ferrum",
         "price": 8000,
@@ -142,7 +142,7 @@
     },
     {
         "id": 13,
-        "title": "Marina",                
+        "title": "marina",                
         "description": "Depósito de apoyo Marina blanco Ferrum",
         "price": 8000,
         "stock": 30,
@@ -152,7 +152,7 @@
     },
     {
         "id": 14,
-        "title": "Bari",
+        "title": "bari",
         
         "description": "Depósito de apoyo Bari blanco Ferrum",
         "price": 8000,
@@ -164,7 +164,7 @@
 
     {
         "id": 15,
-        "title": "Andina",
+        "title": "andina",
         
         "description": "Depósito de apoyo Andina blanco Ferrum",
         "price": 8000,
@@ -175,7 +175,7 @@
      },
     {
         "id": 16,
-        "title": "Trento",
+        "title": "trento",
         
         "description": "Depósito de apoyo Trento blanco Ferrum",
         "price": 9000,
@@ -187,7 +187,7 @@
     },
     {
         "id": 17,
-        "title": "Varese",
+        "title": "varese",
         
         "description": "Depósito de apoyo Varese blanco Ferrum",
         "price": 14000,
@@ -199,7 +199,7 @@
     },
     {
         "id": 18,
-        "title": "Veneto",
+        "title": "veneto",
         
         "description": "Depósito de apoyo Veneto blanco Ferrum",
         "price": 8000,
