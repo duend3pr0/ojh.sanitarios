@@ -3,7 +3,8 @@ import MainNavigator from './navigations';
 
 function App() {
   return (
-    <MainNavigator/>
+    <MainNavigator/>  
+    
   );
 }
 

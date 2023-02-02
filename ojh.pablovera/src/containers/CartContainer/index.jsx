@@ -18,8 +18,7 @@ const Cart = () => {
 
   const [loader, setLoader] = useState(false);
 
-  console.log(products)
-
+  
   const confirmPurchase = async (dataDelFormulario) => {
     const {phone: telefono, nombre, email} = dataDelFormulario
     try {
@@ -32,10 +31,9 @@ const Cart = () => {
         total: total()
       })
   
-      // setFormVis(true);
+      
       console.log(order);
   
-      //Almacenar la order en firebase y con el ID autogenerado por firebase, mostramos un alert de confirmación de compra.
   
       // Add a new document with a generated id.
       const docRef = await addDoc(collection(db, "orders"), order);

@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import "./styles.css"
 
 const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
     const {
@@ -44,7 +45,7 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                 )}
                 {errors?.email?.type === "required" && <p>El campo email es requerido</p>}
                 <label>Telefono</label>
-                <input type="number" {...register("phone", { min: 10, maxLength: 10, required: true })} />
+                <input type="number" {...register("phone", { minLength: 10, maxLength: 10, required: true })} />
                 {errors?.phone?.type === "minLength" && (
                   <p>El teléfono debe tener 10 digitos</p>
                 )}

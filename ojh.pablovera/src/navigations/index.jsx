@@ -4,11 +4,10 @@ import ItemDetailContainer from '../containers/ItemDetailContainer';
 import ItemListContainer from '../containers/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Cart from '../containers/CartContainer';
-import ShopProvider from "../context/ShopProvider";
 
 const MainNavigator = () => {
     return (
-        <ShopProvider>
+        
         <BrowserRouter>
             <NavBar />
             <Routes>
@@ -19,7 +18,7 @@ const MainNavigator = () => {
                 <Route path="*" element={<h2>Ruta no encontrada</h2>} />
             </Routes>
         </BrowserRouter>
-        </ShopProvider>
+        
     );
 };
 

@@ -1,5 +1,5 @@
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { db } from '../firebase/config';
 
 const useFirebase = (categoryId) => {
@@ -16,11 +16,11 @@ const useFirebase = (categoryId) => {
             const getProducts = async () => {
                 let querySnapshot;
                 if (categoryId) {
-                    const q = query(collection(db, "products"), where("category" , "==", categoryId)||("title" , "==", categoryId) );
-                    const p = query(collection(db, "products"), where("title" , "==", categoryId));
-                    querySnapshot = await getDocs(q)
+                    console.log(categoryId)
+                    const q = query(collection(db, "products"), where("category" , "==", categoryId));
+                    querySnapshot = await getDocs(q);
                     
-                    } else {
+                } else {
                     querySnapshot = await getDocs(collection(db, "products"));
                 }
                 const productosFirebase = [];
@@ -29,21 +29,20 @@ const useFirebase = (categoryId) => {
                     id: doc.id,
                     ...doc.data()
                     }
-                    productosFirebase.push(product)
+                    productosFirebase.push(product);
                 });
-                setProducts(productosFirebase)
-                console.log(products)
-                setLoading(false)
+                setProducts(productosFirebase);
+                setLoading(false);
             }
-
+            
             getProducts();
             
         } catch (error) {
             setError(error.message)
-        }
-    }, [categoryId])
+        }        
+    }, [categoryId]);
         
-    return [products, loading, error]
+    return [products, loading, error];
 }
 
-export default useFirebase
+export default useFirebase;

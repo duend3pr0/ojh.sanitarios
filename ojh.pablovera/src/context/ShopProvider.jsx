@@ -53,7 +53,6 @@ const ShopProvider = ({children}) => {
 
 
 
-    //* Insertar formulario, con set visibility, poner la variable en un estado iniciando en false
         
     return (
         <Shop.Provider value = {{products, addProduct, countCart,total, cleanCart,removeProduct}}>

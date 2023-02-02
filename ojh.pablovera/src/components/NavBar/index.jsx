@@ -26,18 +26,7 @@ export default function NavBar() {
 
               </ul>
             </li>
-            <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle ul-link" to="/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Productos
-              </Link>
-              <ul className="dropdown-menu">
-                <li><Link className="dropdown-item ul-link" to="/category/inodoros">Inodoros</Link></li>
-                <li><Link className="dropdown-item ul-link" to="/category/bidets">Bidets</Link></li>
-                <li><Link className="dropdown-item ul-link" to="/category/depositos">Depositos</Link></li>
-                
-
-              </ul>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link active ul-link" aria-current="page" to="/category/">Contacto</Link>
             </li>
