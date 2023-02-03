@@ -39,42 +39,24 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                 {errors?.nombre?.type === "minLength" && (
                   <p>El nombre debe superar los 3 caracteres</p>
                 )}
-                {/* <label>Email</label>
-                <input type='email' {...register("email", {minLength: 3, required: true})} />
-                {errors?.email?.type === "minLength" && (
-                  <p>El mail tiene que tener minimo 3 caracteres</p>
-                )}
-                <label>Repetir email</label>
-                <input type='email' {...register("email", {minLength: 3, required: true})} />
-                {errors?.email?.type === "minLength" && (
-                  <p>El mail debe ser igual al anterior</p>
-                )} */}
-                <label>Email: </label>
-            <input
-          {...register("password", { required: "email is required!" })}
-        />
-        {errors.password && (
-          <p style={{ color: "white" }}>{errors.password.message}</p>
-        )}
-
-        <label>Confirmar email: </label>
-        <input
-          {...register("emailConfirmation", {
-            required: "Por favor confirmar email!",
-            validate: {
-              matchesPreviousMail: (value) => {
-                const { mail } = getValues();
-                return mail === value || "Los emails deben coincidir!";
-              }
-            }
-          })}
-          />
-          {errors.mailConfirmation && (
-            <p style={{ color: "white" }}>
-              {errors.mailConfirmation.message}
-            </p>
-          )}
-          {errors?.email?.type === "required" && <p>El campo email es requerido</p>}
+               <label>Email</label>
+               <input
+              className="form-control"
+              type="email"
+              name="email1"
+              {...register("email1", { minLength: 3, required: true })}
+            />
+              <label>Repetir email</label>
+          <input
+            className="form-control"
+              type="email"
+              name="email2"
+              {...register("email2", { minLength: 3, required: true, validate:{equalMails: mail2=>mail2 ===getValues().email1} })}
+            />
+            {errors?.email2?.type === "equalMails" && (
+              <p>Los emails deben coincidir</p>
+            )}
+               
                 <label>Telefono</label>
                 <input type="number" {...register("phone", { minLength: 10, maxLength: 10, required: true })} />
                 {errors?.phone?.type === "minLength" && (
