@@ -2,7 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
 import useFirebase from '../../hooks/useFirebase';
-
+import Spinner from 'react-bootstrap/esm/Spinner';
+import "./styles.css"
 
 const ItemListContainer = () => {  
   
@@ -16,7 +17,9 @@ const ItemListContainer = () => {
       {error && <h1>Oh oh hubo un error: {error}</h1>}
       {
         loading ?
-          <h1>Cargando... </h1>
+        <div className='spinnerCustom'>
+          <Spinner animation="border" variant="primary" role="status"/>
+        </div>
           : <ItemList productos={products}/>
       }
     </>

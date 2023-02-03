@@ -5,9 +5,12 @@ import generateOrderObject from '../../services/generateOrderObject';
 import { collection, addDoc } from "firebase/firestore"; 
 import { db } from '../../firebase/config';
 import { doc, updateDoc } from "firebase/firestore";
-import { Link } from 'react-router-dom';
 import FormComp from '../../components/Form';
 import Spinner from 'react-bootstrap/Spinner';
+import NoProducts from '../../components/NoProducts';
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+
 
 
 const Cart = () => {
@@ -48,7 +51,13 @@ const Cart = () => {
         });
       }
 
-      alert("Orden confirmada con ID: " + docRef.id);
+      // alert("Orden confirmada con ID: " + docRef.id);
+      Swal.fire({
+        title: 'Compra exitosa',
+        text: 'Orden confirmada con ID:'+ docRef.id,
+        icon: 'success',
+        confirmButtonText: 'OK'
+      })
       
     } catch (error) {
       console.log(error);
@@ -63,7 +72,7 @@ const Cart = () => {
       {
         products.length !== 0 ?
         <>
-          <table class="table table-success table-striped">
+          <table class="table table-success tableCustom table-striped">
             <thead>
               <tr>
                 <th scope="col">id</th>
@@ -84,15 +93,13 @@ const Cart = () => {
             loader ?
             <Spinner animation="grow" variant="success"/>
             :
-            <button onClick={()=> setFormVis(true)}>Confirm purchase</button>
+            <button onClick={()=> setFormVis(true)} className="buttonCustom">Confirmar compra</button>
           }
         </>
         :
         <>
-          <h1>No hay productos en el carrito.</h1>
-          <button>
-            <Link to = "/">Brand</Link>
-          </button>
+          <NoProducts/>
+          
         </>
       }
       { formVis ? 

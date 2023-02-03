@@ -4,4 +4,9 @@
 
 input {
     width: 100%;
+    background-color:rgb(8, 116, 239) !important;
+    border-radius: 30px;
+    color: whitesmoke;
+    font-weight: bolder;
+    
 }

@@ -5,7 +5,7 @@ import CartWidget from '../CartWidget';
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light m-3">
+    <nav className="navbar navbar-custom navbar-expand-lg bg-light m-6">
       <div className="container-fluid">
         <Link className="navbar-brand BrandName" to="/#">OJH SANITARIOS</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,18 +26,20 @@ export default function NavBar() {
 
               </ul>
             </li>
+
+             {/* Lo de abajo es lo próximo a implementar */}
             
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link active ul-link" aria-current="page" to="/category/">Contacto</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active ul-link" aria-current="page" to="/category/">Sobre Nosotros</Link>
-            </li>
+            </li> */}
 
           </ul>
           <div className="d-flex mr-2" >
             <CartWidget/>
-                     </div>
+          </div>
         </div>
       </div>
     </nav>

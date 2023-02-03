@@ -9,7 +9,6 @@ import "./styles.css";
  * @returns Contador
  */
 
-
 const ItemCount = ({ onAdd, stock, initial }) => {
     const [count, setCount] = useState(initial);
 
@@ -24,7 +23,7 @@ const ItemCount = ({ onAdd, stock, initial }) => {
     return (
         <div className="count-container">
             <button className="btn btn-primary p-2" onClick={onDecrement}>-</button>
-            <span>{count}</span>
+            <span className="count">{count}</span>
             <button className="btn btn-primary p-2" onClick={onPlus}>+</button>
             <button className="btn btn-primary p-2" onClick={() => onAdd(count)}>Confirmar compra</button>
         </div>

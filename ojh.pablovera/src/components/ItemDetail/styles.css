@@ -21,4 +21,9 @@
     }
     .gocart{
         color: white;
+
     }
+    .gocart:hover{
+        color: white;
+    }
+    

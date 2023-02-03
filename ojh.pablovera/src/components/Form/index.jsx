@@ -8,7 +8,8 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
     const {
         register,
         handleSubmit,
-        formState: { errors }
+        formState: { errors },
+        getValues
       } = useForm();
     
       const onSubmit = (dataDelFormulario) => {
@@ -36,14 +37,44 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                 />
                 {errors?.nombre?.type === "required" && <p>El campo nombre es requerido</p>}
                 {errors?.nombre?.type === "minLength" && (
-                  <p>El nombre debe superar los 2 caracteres</p>
+                  <p>El nombre debe superar los 3 caracteres</p>
                 )}
-                <label>Email</label>
+                {/* <label>Email</label>
                 <input type='email' {...register("email", {minLength: 3, required: true})} />
                 {errors?.email?.type === "minLength" && (
                   <p>El mail tiene que tener minimo 3 caracteres</p>
                 )}
-                {errors?.email?.type === "required" && <p>El campo email es requerido</p>}
+                <label>Repetir email</label>
+                <input type='email' {...register("email", {minLength: 3, required: true})} />
+                {errors?.email?.type === "minLength" && (
+                  <p>El mail debe ser igual al anterior</p>
+                )} */}
+                <label>Email: </label>
+            <input
+          {...register("password", { required: "email is required!" })}
+        />
+        {errors.password && (
+          <p style={{ color: "white" }}>{errors.password.message}</p>
+        )}
+
+        <label>Confirmar email: </label>
+        <input
+          {...register("emailConfirmation", {
+            required: "Por favor confirmar email!",
+            validate: {
+              matchesPreviousMail: (value) => {
+                const { mail } = getValues();
+                return mail === value || "Los emails deben coincidir!";
+              }
+            }
+          })}
+          />
+          {errors.mailConfirmation && (
+            <p style={{ color: "white" }}>
+              {errors.mailConfirmation.message}
+            </p>
+          )}
+          {errors?.email?.type === "required" && <p>El campo email es requerido</p>}
                 <label>Telefono</label>
                 <input type="number" {...register("phone", { minLength: 10, maxLength: 10, required: true })} />
                 {errors?.phone?.type === "minLength" && (
