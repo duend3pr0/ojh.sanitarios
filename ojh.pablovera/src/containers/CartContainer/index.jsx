@@ -106,7 +106,7 @@ const Cart = () => {
             <div className='buttons'>
             <button onClick={()=> setFormVis(true)} className="buttonCustom">Finalizar compra</button>
             <button className='buttonCustom'>
-            <Link to = "/" className='buttonCustom'>Seguir comprando</Link>
+            <Link to = "/" className='buttonCustom'>Volver al inicio</Link>
           </button>
           </div>
             </>

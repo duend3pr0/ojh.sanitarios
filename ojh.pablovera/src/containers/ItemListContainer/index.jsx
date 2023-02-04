@@ -5,10 +5,12 @@ import useFirebase from '../../hooks/useFirebase';
 import Spinner from 'react-bootstrap/esm/Spinner';
 import "./styles.css"
 
+
 const ItemListContainer = () => {  
   
   const {categoryId}  = useParams()
-    
+
+  
   const [products, loading, error] =useFirebase(categoryId)
    
   return (
