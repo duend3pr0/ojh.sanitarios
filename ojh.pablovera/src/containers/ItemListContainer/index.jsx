@@ -8,8 +8,7 @@ import "./styles.css"
 const ItemListContainer = () => {  
   
   const {categoryId}  = useParams()
-  
-  
+    
   const [products, loading, error] =useFirebase(categoryId)
    
   return (
@@ -18,9 +17,14 @@ const ItemListContainer = () => {
       {
         loading ?
         <div className='spinnerCustom'>
-          <Spinner animation="border" variant="primary" role="status"/>
+          <Spinner animation="border" variant="primary" />
+            <h1 className='loadingg'>Cargando...</h1>
         </div>
-          : <ItemList productos={products}/>
+          : 
+          <div>
+            <h1 className='lineaNombre'> {categoryId}</h1>
+          <ItemList productos={products}/>
+          </div>
       }
     </>
   )

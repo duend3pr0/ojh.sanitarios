@@ -10,9 +10,10 @@ const TableRow = ({product}) => {
   return (
     <tr className='tablaCart'>
           <th scope="row">{product.id}</th>
+          <td>{product.category}</td>
           <td><img src={product.image} alt="table-row" className='imgCart'></img></td>
-          <td>{product.title}</td>
-          <td>{product.price}</td>
+          <td>{product.description}</td>
+          <td>${product.price}</td>
           <td>{product.quantity}</td>
           <td><button onClick={()=>removeProduct(product.id)}><RiDeleteBin4Line/></button></td>
     </tr>

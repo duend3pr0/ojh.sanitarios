@@ -32,7 +32,7 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                 <input
                   {...register("nombre", {
                     required: true,
-                    minLength: 2,
+                    minLength: 3,
                   })}
                 />
                 {errors?.nombre?.type === "required" && <p>El campo nombre es requerido</p>}
@@ -65,12 +65,16 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                 {errors?.phone?.type === "required" && <p>El campo telefono es requerido</p>}
               </Modal.Body>
               <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+                <Button variant="secondary" className="buttonClose" onClick={handleClose}>
                   Cerrar
                 </Button>
-                <Button variant="primary" type ="submit">
-                  Confirmar compra
+                <>
+            <div className='buttons'>
+                <Button className="buttonAdd" variant="primary" type ="submit">
+                  Confirmar pedido
                 </Button>
+            </div>
+            </>
               </Modal.Footer>
             </form>
           </Modal>

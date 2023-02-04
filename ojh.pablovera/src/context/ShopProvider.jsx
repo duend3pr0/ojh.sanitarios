@@ -24,7 +24,7 @@ const ShopProvider = ({children}) => {
     const countCart = () => {
         let cantidadTotal = 0;
         for (const product of products) {
-            cantidadTotal += product.quantity
+            cantidadTotal += (product.quantity / product.quantity)
         }
         return cantidadTotal
     }
@@ -50,9 +50,6 @@ const ShopProvider = ({children}) => {
         const productsFiltered = products.filter(product => product.id !== id);
         setProducts(productsFiltered)
     }
-
-
-
         
     return (
         <Shop.Provider value = {{products, addProduct, countCart,total, cleanCart,removeProduct}}>

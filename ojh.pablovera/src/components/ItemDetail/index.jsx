@@ -22,7 +22,7 @@ const ItemDetail = ({detail}) => {
         <div className="detail-container">
             <img className="detail-img" src={detail.image} alt={detail.description} />
             <aside className="detail-aside">
-                <h4>{detail.title}</h4>
+                <h4>{detail.description}</h4>
                 {
                     quantity === 0 ?
                     <ItemCount 
@@ -31,11 +31,21 @@ const ItemDetail = ({detail}) => {
                         onAdd={onAdd}    
                     />
                     :
-                    <button className="btn btn-primary p-2">
+                    <>
+                    <div className="buttonsCart">
+                    <button className="btn btn-primary p-2 buttonsCart">
                         <Link className="gocart" to="/cart">
                             Ir al carrito
                         </Link>
                     </button>
+                    <button className="btn btn-primary p-2 buttonsCart">
+                        <Link className="gocart" to="/cart">
+                            Volver al inicio
+                        </Link>
+                     </button>
+                  </div>
+                  </>
+                    
                 }
             </aside>
         </div>

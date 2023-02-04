@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 /**
  * 
@@ -21,11 +22,18 @@ const ItemCount = ({ onAdd, stock, initial }) => {
     };
 
     return (
-        <div className="count-container">
+        <div className="count-container itemDetail">
             <button className="btn btn-primary p-2" onClick={onDecrement}>-</button>
             <span className="count">{count}</span>
             <button className="btn btn-primary p-2" onClick={onPlus}>+</button>
-            <button className="btn btn-primary p-2" onClick={() => onAdd(count)}>Confirmar compra</button>
+            <button className="btn btn-primary p-2 buttonsCart" onClick={() => onAdd(count)}>
+                <Link className="gocart" to="/cart">
+                            Agregar al carrito
+                </Link></button>
+            <button className='btn btn-primary p-2 buttonsCart'>
+            <Link to = "/" className='gocart'>Volver al inicio</Link>
+          </button>
+            
         </div>
     );
 };

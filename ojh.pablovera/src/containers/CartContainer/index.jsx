@@ -10,6 +10,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import NoProducts from '../../components/NoProducts';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
+import { Link } from 'react-router-dom';
 
 
 
@@ -72,28 +73,43 @@ const Cart = () => {
       {
         products.length !== 0 ?
         <>
+          <h1 className='titleCart'>Detalle del carrito</h1>
           <table class="table table-success tableCustom table-striped">
             <thead>
               <tr>
                 <th scope="col">id</th>
+                <th scope="col">Categoría</th>
                 <th scope="col">Imágen</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Precio</th>
                 <th scope="col">Cantidad</th>
-                <th scope="col">eliminar</th>
+                <th scope="col">Eliminar</th>
               </tr>
             </thead>
             <tbody>
               {products.map(product => {
                 return <TableRow key={product.id} product={product}/>
               })}
+              <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col" className='totalCompra'>Total</th>
+                <th scope="col" className='totalNumero'>${total()}</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
             </tbody>
           </table>
           {
             loader ?
             <Spinner animation="grow" variant="success"/>
             :
-            <button onClick={()=> setFormVis(true)} className="buttonCustom">Confirmar compra</button>
+            <>
+            <div className='buttons'>
+            <button onClick={()=> setFormVis(true)} className="buttonCustom">Finalizar compra</button>
+            <button className='buttonCustom'>
+            <Link to = "/" className='buttonCustom'>Seguir comprando</Link>
+          </button>
+          </div>
+            </>
           }
         </>
         :

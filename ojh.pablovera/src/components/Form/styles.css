@@ -10,3 +10,15 @@ input {
     font-weight: bolder;
     
 }
+.buttonClose{
+    background-color: brown;
+}
+.buttonClose:hover{
+    background-color: brown;
+}
+.buttonAdd{
+    background-color: green;
+}
+.buttonAdd:hover{
+    background-color: green;
+}
