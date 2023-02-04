@@ -34,6 +34,7 @@
     margin: 0px 0 40px;
     display: flex;
     align-items: flex-end;
+    font-size: 24px;
     color: red;
 }
 .totalNumero{

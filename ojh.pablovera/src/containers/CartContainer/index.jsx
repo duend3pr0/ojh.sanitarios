@@ -92,9 +92,9 @@ const Cart = () => {
               })}
               <th scope="col"></th>
                 <th scope="col"></th>
-                <th scope="col" className='totalCompra'>Total</th>
-                <th scope="col" className='totalNumero'>${total()}</th>
                 <th scope="col"></th>
+                <th scope="col" className='totalCompra'>Total:</th>
+                <th scope="col" className='totalNumero'>${total()}</th>
                 <th scope="col"></th>
             </tbody>
           </table>

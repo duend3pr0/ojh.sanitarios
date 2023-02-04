@@ -65,12 +65,13 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                 {errors?.phone?.type === "required" && <p>El campo telefono es requerido</p>}
               </Modal.Body>
               <Modal.Footer>
-                <Button variant="secondary" className="buttonClose" onClick={handleClose}>
+                <Button variant="secondary" className="buttonClose btn-danger" onClick={handleClose}>
                   Cerrar
                 </Button>
                 <>
             <div className='buttons'>
-                <Button className="buttonAdd" variant="primary" type ="submit">
+                <Button className="buttonAdd btn-success
+                " variant="primary" type ="submit">
                   Confirmar pedido
                 </Button>
             </div>

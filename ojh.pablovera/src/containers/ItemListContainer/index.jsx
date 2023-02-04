@@ -25,6 +25,7 @@ const ItemListContainer = () => {
           : 
           <div>
             <h1 className='lineaNombre'> {categoryId}</h1>
+             {/* Quisiera poner categoryId en mayúscula pero cuando aplico toUpperCase se me rompe */}
           <ItemList productos={products}/>
           </div>
       }

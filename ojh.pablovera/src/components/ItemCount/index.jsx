@@ -23,9 +23,9 @@ const ItemCount = ({ onAdd, stock, initial }) => {
 
     return (
         <div className="count-container itemDetail">
-            <button className="btn btn-primary p-2" onClick={onDecrement}>-</button>
+            <button className="btn btn-primary p-2 btn-danger" onClick={onDecrement}>-</button>
             <span className="count">{count}</span>
-            <button className="btn btn-primary p-2" onClick={onPlus}>+</button>
+            <button className="btn btn-primary p-2 btn-success" onClick={onPlus}>+</button>
             <button className="btn btn-primary p-2 buttonsCart" onClick={() => onAdd(count)}>
                 <Link className="gocart" to="/cart">
                             Agregar al carrito
