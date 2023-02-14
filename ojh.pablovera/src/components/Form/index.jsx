@@ -43,15 +43,15 @@ const FormComp = ({confirmPurchase, formVis, setFormVis}) => {
                <input
               className="form-control"
               type="email"
-              name="email1"
-              {...register("email1", { minLength: 3, required: true })}
+              name="email"
+              {...register("email", { minLength: 3, required: true })}
             />
               <label>Repetir email</label>
           <input
             className="form-control"
               type="email"
               name="email2"
-              {...register("email2", { minLength: 3, required: true, validate:{equalMails: mail2=>mail2 ===getValues().email1} })}
+              {...register("email2", { minLength: 3, required: true, validate:{equalMails: mail2=>mail2 ===getValues().email} })}
             />
             {errors?.email2?.type === "equalMails" && (
               <p>Los emails deben coincidir</p>
