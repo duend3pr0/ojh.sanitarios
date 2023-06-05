@@ -1,0 +1,28 @@
+.spinnerCustom{
+    font-size: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.loadingg {
+    color: rgb(8, 116, 239) ;
+    font-size: 60px;
+}
+
+
+.lineaNombre {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-inline: auto;
+    margin-block: auto ;
+    position: relative;
+    left: 40%;
+    font-size: 50px;
+    color: rgb(8, 116, 239);
+    
+}
